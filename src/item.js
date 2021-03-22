@@ -2,14 +2,20 @@ import React from "react";
 
 const Item = (props) => {
   return (
-    <div className="item">
-      <div className="logo">
-        <img src={props.logo} alt={props.name} />
+    <div class="grid">
+        <article>
+    {/* <div className="item"> */}
+     
+    <div class="text">
+        <h3>{props.title}</h3>
+        <p>{props.text}</p>
+        <p>{props.type}</p>
+        <a href={props.url} >Link</a>
+        <h5>{props.by}</h5>
       </div>
-      <div className="name">
-        <p>{props.name}</p>
-        <div className="tags">{props.tags.join(", ")}</div>
-      </div>
+     
+    {/* </div> */}
+    </article>
     </div>
   );
 };
